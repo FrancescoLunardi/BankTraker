@@ -1,0 +1,10 @@
+.box {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-big {
+    margin-bottom: clamp(2rem, 7dvh, 2.5rem);
+}

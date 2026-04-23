@@ -1,0 +1,129 @@
+:root {
+    --blue: #211F36;
+    --blu-clear: #616083;
+    --green: #51FAAA;
+    --green-gradient: #51faab9e;
+    --pink: #FF81FF;
+    --pink-gradient: #ff81ff6f;
+    --white: #fff;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: linear-gradient(0deg, var(--blu-clear), var(--blue));
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page {
+    padding: clamp(1rem, 4vw, 2rem);
+}
+
+button {
+    font-size: 1rem;
+    padding: 0.8em 3em;
+    border-radius: 2rem;
+    border: none;
+    color: var(--white);
+    margin: clamp(1.5rem, 3dvw, 4rem);
+}
+
+button:hover {
+    scale: 1.1;
+    transition: 1s;
+}
+
+.btn-gradient-green {
+    background-image: linear-gradient(-35deg, var(--green-gradient), var(--blu-clear));
+    backdrop-filter: blur(3rem);
+    box-shadow: var(--green-gradient) 0px 2px clamp(1rem, 4dvw, 3rem) 0px;
+}
+
+.btn-gradient-pink {
+    background-image: linear-gradient(-35deg, var(--pink-gradient), var(--blu-clear));
+    backdrop-filter: blur(3rem);
+    box-shadow: var(--pink-gradient) 0px 2px clamp(1rem, 4dvw, 3rem) 0px;
+}
+
+.btn-green {
+    background-color: var(--green);
+}
+
+.btn-pink {
+    background-color: var(--pink);
+}
+
+.title {
+    color: var(--white);
+    font-weight: 200;
+}
+
+.title-big {
+    font-size: clamp(4rem, 6dvw, 10rem);
+}
+
+.form {
+    width: min(100%, 420px);
+    padding: clamp(2rem, 6dvh, 5rem) clamp(1.2rem, 6dvw, 4rem);
+    display: flex;
+    flex-direction: column;
+    border-radius: clamp(1.5rem, 10vw, 3rem);
+    border: 1px solid #b1b1b1;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: var(--blue) 0px 2px clamp(1rem, 4dvw, 3rem) 0px;
+}
+
+.form-green {
+    background-image: linear-gradient(-45deg, var(--green-gradient), var(--blu-clear));
+    box-shadow: var(--green-gradient) 0px 2px clamp(1rem, 4dvw, 3rem) 0px;
+}
+
+.form-pink {
+    background-image: linear-gradient(-45deg, var(--pink-gradient), var(--blu-clear));
+    box-shadow: var(--pink-gradient) 0px 2px clamp(1rem, 4dvw, 3rem) 0px;
+}
+
+.form h1 {
+    color: var(--white);
+    margin-bottom: clamp(2rem, 6dvh, 3rem);
+}
+
+.form input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: clamp(1rem, 5dvh, 1.5rem);
+    border: none;
+    padding: clamp(0.6rem, 3dvw, 1rem);
+    border-radius: clamp(1rem, 0.8dvw, 2rem);
+    color: var(--white);
+}
+
+.form input::placeholder {
+    color: #ffffffab;
+}
+
+.input-green {
+    background-image: linear-gradient(-30deg, var(--blu-clear), var(--green-gradient));
+    box-shadow: var(--green-gradient) 0px 2px clamp(1rem, 4dvw, 3rem) 0px;
+}
+
+.input-pink {
+    background-image: linear-gradient(-30deg, var(--blu-clear), var(--pink-gradient));
+    box-shadow: var(--pink-gradient) 0px 2px clamp(1rem, 4dvw, 3rem) 0px;
+}
+
+.form button {
+    margin-top: clamp(2rem, 6dvh, 4rem);
+    margin-bottom: 0;
+}
