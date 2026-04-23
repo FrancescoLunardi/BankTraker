@@ -8,5 +8,5 @@ Each user has access to a personal dashboard where they can view their transacti
 
 I developed this project to showcase my skills and to receive feedback from more experienced developers.
 
-###⚠️ Disclaimer:
+### ⚠️ Disclaimer:
 This project does NOT implement any security measures for data transmission or storage. It is not intended for production use.
